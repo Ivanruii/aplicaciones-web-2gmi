@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="icon" href="https://github.com/Ivanruii/aplicaciones-web-2gmi/blob/main/public/assets/img/logo.png?raw=true">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        div table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        div table,
+        th,
+        td {
+            text-align: center;
+            padding: 20px;
+        }
+
+        thead th {
+            background-color: bisque;
+        }
+
+        .header {
+            background-color: bisque;
+
+        }
+
+        div table {
+            font-family: roboto;
+        }
+
+        .web {
+            background-color: aqua;
+        }
+
+        .sor {
+            background-color: blueviolet;
+        }
+
+        .seguridad {
+            background-color: yellowgreen;
+        }
+
+        .redes {
+            background-color: tomato;
+        }
+
+        .hlc {
+            background-color: chocolate;
+        }
+
+        .empresa {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <th>8:30 - 9:30</th>
+            <td>WEB</td>
+            <td>SOR</td>
+            <td>SEGURIDAD</td>
+            <td>SEGURIDAD</td>
+            <td>REDES</td>
+        </tr>
+        <tr>
+            <th>9:30 - 10:30</th>
+            <td>WEB</td>
+            <td>SOR</td>
+            <td>SEGURIDAD</td>
+            <td>SEGURIDAD</td>
+            <td>REDES</td>
+        </tr>
+        <tr>
+            <th>10:30 - 11:30</th>
+            <td>SOR</td>
+            <td>SOR</td>
+            <td>REDES</td>
+            <td>SEGURIDAD</td>
+            <td>WEB</td>
+        </tr>
+        <tr>
+            <th>11:30 - 12:00</th>
+            <td>RECREO</td>
+            <td>RECREO</td>
+            <td>RECREO</td>
+            <td>RECREO</td>
+            <td>RECREO</td>
+        </tr>
+        <tr>
+            <th>12:00 - 13:00</th>
+            <td>SOR</td>
+            <td>SOR</td>
+            <td>REDES</td>
+            <td>HLC</td>
+            <td>WEB</td>
+        </tr>
+        <tr>
+            <th>13:00 - 14:00</th>
+            <td>SOR</td>
+            <td>REDES</td>
+            <td>REDES</td>
+            <td>HLC</td>
+            <td>EMPRESA</td>
+        </tr>
+        <tr>
+            <th>14:00 - 15:00</th>
+            <td>EMPRESA</td>
+            <td>REDES</td>
+            <td>EMPRESA</td>
+            <td>HLC</td>
+            <td>EMPRESA</td>
+        </tr>
+    </table>
+    <br>
+    <hr> <!-- TABLA 2 -->
+    <br>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="header">8:30 - 9:30</th>
+                    <td rowspan="2" class="web">WEB</td>
+                    <td rowspan="3" class="sor">SOR</td>
+                    <td rowspan="2" class="seguridad">SEGURIDAD</td>
+                    <td rowspan="3" class="seguridad">SEGURIDAD</td>
+                    <td rowspan="2" class="redes" class="redes">REDES</td>
+                </tr>
+                <tr>
+                    <th class="header">9:30 - 10:30</th>
+                </tr>
+                <tr>
+                    <th class="header">10:30 - 11:30</th>
+                    <td class="sor">SOR</td>
+                    <td class="redes">REDES</td>
+                    <td class="web">WEB</td>
+                </tr>
+                <tr>
+                    <th class="header">11:30 - 12:00</th>
+                    <th colspan="5" class="header">RECREO</th>
+                </tr>
+                <tr>
+                    <th class="header">12:00 - 13:00</th>
+                    <td rowspan="2" class="sor">SOR</td>
+                    <td class="sor">SOR</td>
+                    <td rowspan="3" class="redes">REDES</td>
+                    <td rowspan="2" class="hlc">HLC</td>
+                    <td class="web">WEB</td>
+                </tr>
+                <tr>
+                    <th class="header">13:00 - 14:00</th>
+                    <td rowspan="2" class="redes">REDES</td>
+                    <td rowspan="2" class="empresa">EMPRESA</td>
+                </tr>
+                <tr>
+                    <th class="header">14:00 - 15:00</th>
+                    <td class="empresa">EMPRESA</td>
+                    <td class="empresa">EMPRESA</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <table>
+            <tr class="header">
+                <th>Abreviatura</th>
+                <th>Descripción</th>
+                <th>Profesorado</th>
+                <th>Imágen</th>
+            </tr>
+            <tr class="web">
+                <td><abbr title="Aplicaciones Web">A.W.</abbr></td>
+                <td>Aplicaciones Web</td>
+                <td>May Bandrés</td>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/3518/3518229.png" width="60" alt=""></td>
+            </tr>
+            <tr class="sor">
+                <td><abbr title="Sistemas Operativos en Red">S.O.R.</abbr></td>
+                <td>Sistemas Operativos en Red</td>
+                <td>Andrea Miranda | Reyes Garcia</td>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/3715/3715133.png" width="60" alt=""></td>
+            </tr>
+            <tr class="redes">
+                <td><abbr title="Servicios en Red">S.R.</abbr></td>
+                <td>Servicios en Red</td>
+                <td>M.Dolores Vázquez</td>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/4318/4318400.png" width="60" alt=""></td>
+            </tr>
+            <tr class="seguridad">
+                <td><abbr title="Seguridad Informática">S.I.</abbr></td>
+                <td>Seguridad Informática</td>
+                <td>Luis Morilla</td>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/1995/1995704.png" width="60" alt=""></td>
+            </tr>
+            <tr class="empresa">
+                <td><abbr title="Empresa e Iniciativa Emprendedora">E.I.E</abbr></td>
+                <td>Empresa e Iniciativa Emprendedora</td>
+                <td>Jesus Manjón</td>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/2761/2761008.png" width="60" alt=""></td>
+            </tr>
+            <tr class="hlc">
+                <td><abbr title="header Libre Configuración">H.L.C.</abbr></td>
+                <td>Hora Libre Configuración</td>
+                <td>May Bandrés</td>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/3373/3373475.png" width="60" alt=""></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

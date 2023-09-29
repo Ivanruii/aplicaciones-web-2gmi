@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+div table,
+tr,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+div table,
+th,
+td {
+    text-align: center;
+    padding: 20px;
+}
+
+thead th {
+    background-color: bisque;
+}
+
+.header {
+    background-color: bisque;
+
+}
+
+div table {
+    font-family: roboto;
+}
+
+.web {
+    background-color: aqua;
+}
+
+.sor {
+    background-color: blueviolet;
+}
+
+.seguridad {
+    background-color: yellowgreen;
+}
+
+.redes {
+    background-color: tomato;
+}
+
+.hlc {
+    background-color: chocolate;
+}
+
+.empresa {
+    background-color: darkcyan;
+}

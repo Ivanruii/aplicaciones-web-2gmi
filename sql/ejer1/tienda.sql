@@ -16,3 +16,7 @@ CREATE TABLE IF NOT EXISTS precios (
     cod_prove INTEGER,
     precio FLOAT
 )
+
+ALTER TABLE  precios
+ADD CONSTRAINT fk_prepie FOREIGN KEY (cod_pieza)
+REFERENCES piezas;

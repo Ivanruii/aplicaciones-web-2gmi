@@ -20,3 +20,7 @@ CREATE TABLE IF NOT EXISTS precios (
 ALTER TABLE  precios
 ADD CONSTRAINT fk_prepie FOREIGN KEY (cod_pieza)
 REFERENCES piezas;
+
+ALTER TABLE  precios
+ADD CONSTRAINT fk_prepro FOREIGN KEY (cod_prove)
+REFERENCES proveedores;

@@ -159,3 +159,11 @@ WHERE cod_prove = 3;
 ALTER TABLE precios
 DROP CONSTRAINT fk_prepro;
 DROP TABLE proveedores;
+
+/* 6. Nombre del cliente junto con las marcas de los coches que haya alquilado y que han excedido el número de días límite y aún no han sido devueltos. */
+ 
+SELECT DISTINCT nombre, marca
+FROM clientes, alquiler, coches
+WHERE alquiler.fecha_entrega IS NULL
+AND clientes.dni = alquiler.dni_cliente
+AND coches.matricula = alquiler.matricula_coche;

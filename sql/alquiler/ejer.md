@@ -35,7 +35,7 @@ CREATE TABLE alquiler (
 **2. Agregar columna `fecha_carnet` a la tabla clientes:**
 
 ```sql
-    ALTER TABLE Clientes ADD fecha_carnet DATE;
+    ALTER TABLE Clientes ADD COLUMN fecha_carnet DATE;
 ```
 
 **3. Modificar la tabla alquiler para introducir claves ajenas.**
@@ -75,4 +75,13 @@ WHERE nombre LIKE '%f%' AND SUBSTRING(ciudad, 2, 1) = 'm';
 SELECT marca, color FROM Coches
 WHERE precio_alquiler BETWEEN 200.00 AND 500.00
 ORDER BY color DESC;
+```
+
+**4. Nombre y ciudad de los clientes que hayan alquilado un coche en el día de hoy. Hacerlo con reunión natural.**
+
+```sql
+SELECT nombre, ciudad 
+FROM clientes, alquiler
+WHERE fecha_inicio = CURRENT_DATE()
+AND clientes.dni = alquiler.cod_alquiler;
 ```

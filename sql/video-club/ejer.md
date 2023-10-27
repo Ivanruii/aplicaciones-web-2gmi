@@ -90,6 +90,12 @@ INSERT INTO alquiler (cod_socio, cod_peli, fecha_alquiler, fecha_entrega, dias_l
        AND nacionalidad LIKE '_r%' 
     ```
 - 5.3. Codigo, título y precio de las películas cuyo precio esté entre 10 y 30 euros (ambos inclusive), ordenados por el título de forma descendente.
+    ```sql
+        SELECT cod_peli, titulo, precio 
+        from peliculas 
+        WHERE precio BETWEEN 10 AND 30
+        ORDER BY precio DESC;
+    ```
 - 5.4. Nombre y teléfono de los socios que hayan alquilado una película en el día de hoy.
 - 5.5. Nombre del socio junto con los títulos de las películas que haya alquilado y que han excedido el número de días límite y aún no han sido devueltas.
 - 5.6. Nombre y sexo de los socios que han alquilado la película de la “Pantera Rosa”

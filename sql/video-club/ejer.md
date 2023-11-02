@@ -97,6 +97,13 @@ INSERT INTO alquiler (cod_socio, cod_peli, fecha_alquiler, fecha_entrega, dias_l
         ORDER BY precio DESC;
     ```
 - 5.4. Nombre y teléfono de los socios que hayan alquilado una película en el día de hoy.
+
+    ```sql
+        SELECT nombre, telefono
+        FROM socios, alquiler
+        WHERE fecha_alquiler = CURRENT_DATE()
+        AND 
+    ```
 - 5.5. Nombre del socio junto con los títulos de las películas que haya alquilado y que han excedido el número de días límite y aún no han sido devueltas.
 - 5.6. Nombre y sexo de los socios que han alquilado la película de la “Pantera Rosa”
 - 5.7. Código de los socios (sin duplicados) que no han entregado aún las películas alquiladas.

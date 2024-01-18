@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejercicio 2</h1>
+
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+
+        <br>
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos">
+
+        <br>
+
+        <label for="fecha-nacimiento">Fecha Nacimiento</label>
+        <input type="date" id="fecha-nacimiento">
+
+        <br>
+
+        <label for="direccion">Direccion</label>
+        <input type="text" id="direccion">
+
+        <br>
+
+        <label for="codigo-postal">Codigo postal</label>
+        <input type="text" id="codigo-postal" pattern="\d{5}" maxlength="5" title="Codigo postal 5 digitos">
+
+        <br>
+
+        <label for="provincia">Provincia</label>
+        <input type="text" id="provinvia">
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" pattern="\d{8}" maxlength="8" title="Telefono 8 números">
+
+        <br>
+
+        <label for="sexo">Sexo</label>
+
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="hombre" name="sexo">
+
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="mujer" name="sexo">
+
+        <br>
+
+        <label for="estado-civil">Estado Civil</label>
+        <select name="estado-civil" id="estado-civil">
+            <option value="Soltero" id="estado-civil">Soltero</option>
+            <option value="Casado" id="estado-civil">Casado</option>
+            <option value="Divorciado" id="estado-civil">Divorciado</option>
+            <option value="Otro" id="estado-civil">Otro</option>
+        </select>
+
+        <br>
+
+        <label for="idiomas">Idiomas</label>
+
+        <label for="español">Español</label>
+        <input type="checkbox" name="español">
+
+        <label for="frances">Francés</label>
+        <input type="checkbox" name="frances">
+
+        <label for="ingles">Inglés</label>
+        <input type="checkbox" name="ingles">
+
+        <br>
+
+        <label for="comentarios">Comentarios personales:</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="3"></textarea>
+        <br>
+
+        <input type="submit" value="Enviar Formulario">
+
+        <input type="reset" value="Borrar formulario">
+    </form>
+</body>
+
+</html>

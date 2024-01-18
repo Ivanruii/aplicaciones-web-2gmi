@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Raymond Samuel Tomlinson</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <!-- Versión fea del navegator (pero como se explico en clase): 
+  
+      <nav class="navegator">
+        <ul>
+          <li>
+            <a href="#personal-data">Datos Personales</a>
+          </li>
+          <li>
+            <a href="#project">Proyecto</a>
+          </li>
+          <li>
+            <a href="#other-data">Curiosidades</a>
+          </li>
+        </ul>
+      </nav> -->
+      <!-- Versión con un poco de JS (pero más bonita) -->
+      <nav class="navegator">
+        <ul>
+          <li>
+            <a onclick="scrollToElement('personal-data')">Datos Personales</a>
+          </li>
+          <li>
+            <a onclick="scrollToElement('project')">Proyecto</a>
+          </li>
+          <li class="dropdown">
+            <span>Otros datos</span>
+            <ul class="dropdown-content">
+              <li>
+                <a onclick="scrollToElement('education')">Educación</a>
+              </li>
+              <li>
+                <a onclick="scrollToElement('distinctions')">Distinciones</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="title">
+        <img src="/tomlinson-ray.jpg" alt="">
+        <div>
+          <h1>Ray Tomlinson</h1>
+          <h2>Creador del <span>correo electronico</span> 📧</h2>
+        </div>
+      </div>
+      <hr>
+      <article>
+        <section id="personal-data">
+          <h2>Datos Personales</h2>
+          <ul>
+            <li>Nombre completo: Raymond Samuel Tomlinson</li>
+            <li>Fecha de nacimiento: 23 de abril de 1941</li>
+            <li>Lugar de nacimiento: Amsterdam, Nueva York, Estados Unidos</li>
+            <li>Fallecimiento: 5 de marzo de 2016</li>
+            <li>Logro destacado: Creador del correo electrónico</li>
+          </ul>
+        </section>
+        <section id="project">
+          <h2>Proyecto</h2>
+          <p>
+            Ray Tomlinson fue un destacado <strong>ingeniero informático</strong> que dejó un impacto perdurable en el
+            mundo de la tecnología. Su contribución más icónica fue la invención del <strong>correo
+              electrónico</strong>, una innovación
+            que revolucionó la comunicación digital y se convirtió en un elemento fundamental de la vida moderna.
+
+          </p>
+          <p>
+            Además de
+            su papel pionero en el desarrollo del correo electrónico, Tomlinson desempeñó un papel crucial en la
+            evolución de las redes de computadoras y en el diseño de protocolos que sentaron las bases para la creación
+            de Internet.
+          </p>
+          <p>
+            Su trabajo en ARPANET, el precursor de la red mundial, contribuyó significativamente a la
+            construcción del paisaje tecnológico que hoy conocemos. La visión y la creatividad de Ray Tomlinson han
+            dejado un legado duradero que continúa influyendo en la forma en que nos comunicamos y conectamos en la era
+            digital.
+          </p>
+        </section>
+        <section id="other-data">
+          <h2>Curiosidades</h2>
+          <section class="accordion">
+            <div class="tab">
+              <input type="checkbox" name="accordion-2" id="curiosity-1">
+              <label for="curiosity-1" class="tab-label"><strong>Símbolo '@' en direcciones de correo
+                  electrónico.</strong></label>
+              <div class="tab-content">
+                <p>
+                  Ray Tomlinson fue el primero en
+                  utilizar el
+                  símbolo
+                  '@' para separar el nombre del usuario del nombre del host en las direcciones de correo electrónico.
+                  Esta
+                  elección intuitiva y práctica ha perdurado hasta hoy.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-2" id="curiosity-2">
+              <label for="curiosity-2" class="tab-label">
+                <strong>Correo electrónico como una idea
+                  lateral.</strong>
+              </label>
+              <div class="tab-content">
+                <p>
+                  Tomlinson desarrolló el concepto del correo
+                  electrónico
+                  como
+                  una idea secundaria mientras trabajaba en un proyecto para la implementación del protocolo ARPANET. La
+                  necesidad de una forma eficiente de enviar mensajes entre usuarios de la misma computadora llevó al
+                  nacimiento
+                  del correo electrónico.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-2" id="curiosity-3">
+              <label for="curiosity-3" class="tab-label">
+                <strong>Modestia sobre su invención.</strong>
+              </label>
+              <div class="tab-content">
+                <p>
+                  A pesar de la trascendencia de su invención, Tomlinson era
+                  conocido
+                  por
+                  su
+                  modestia. No consideraba el correo electrónico como una invención revolucionaria y a menudo restaba
+                  importancia a su impacto, aunque había transformado la forma en que el mundo se comunica.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-2" id="curiosity-4">
+              <label for="curiosity-4" class="tab-label">
+                <strong>Influencia en el desarrollo de estándares de Internet.</strong>
+              </label>
+              <div class="tab-content">
+                <p>
+                  Ray Tomlinson también fue parte
+                  del equipo
+                  que
+                  desarrolló el estándar de protocolo TCP/IP, que es fundamental para el funcionamiento de Internet. Su
+                  trabajo
+                  en la creación de estándares ha tenido un impacto duradero en la conectividad global.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-2" id="curiosity-5">
+              <label for="curiosity-5" class="tab-label">
+                <strong>Mensaje de prueba.</strong>
+              </label>
+              <div class="tab-content">
+                <p>
+                  El primer correo electrónico enviado por Tomlinson como prueba de su
+                  sistema fue
+                  simplemente "QWERTYUIOP". No era consciente de que estaba creando un hito histórico en ese momento.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-2" id="curiosity-6">
+              <label for="curiosity-6" class="tab-label">
+                <strong>Diversidad de habilidades.</strong>
+              </label>
+              <div class="tab-content">
+                <p>
+                  Tomlinson no solo era un ingeniero talentoso, sino también
+                  un
+                  programador
+                  hábil. Su habilidad para combinar conocimientos técnicos con una mentalidad creativa contribuyó a la
+                  creación
+                  exitosa del correo electrónico.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-2" id="curiosity-7">
+              <label for="curiosity-7" class="tab-label">
+                <strong> Reconocimientos póstumos.</strong>
+              </label>
+              <div class="tab-content">
+                <p>
+                  Aunque Ray Tomlinson no buscaba la atención pública, después
+                  de su
+                  fallecimiento en 2016, recibió diversos reconocimientos póstumos por su impacto en la tecnología,
+                  incluidos
+                  homenajes y presmios en su honor.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="education">
+          <h2>Educación</h2>
+
+          <div class="container-education">
+            <div class="card">
+              <img src="https://www.usnews.com/cmsmedia/ac/00e20481d55627a7da237db74a4c48/RPI_052219_040-Cropped.png"
+                alt="">
+              <div class="card-content">
+                <h2>
+                  Instituto Politécnico Rensselaer
+                </h2>
+                <p>
+                  Es una de las principales instituciones dedicadas a la docencia y a la investigación, especialmente
+                  en ciencia e ingeniería, de Estados Unidos.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/MIT_Dome_night1_Edit.jpg" alt="">
+              <div class="card-content">
+                <h2>
+                  Instituto Tecnológico de Massachusetts
+                </h2>
+                <p>
+                  Es una universidad privada localizada en Massachusetts considerada por numerosos rankings
+                  como una de las mejores y más prestigiosas universidades.
+                </p>
+              </div>
+            </div>
+        </section>
+        <section id="distinctions">
+          <div class="container-distinctions">
+
+          </div>
+          <h2>Distinciones</h2>
+          <ul>
+            <li>IEEE Internet Award (2004)</li>
+            <li>Premio Princesa de Asturias de Investigación Científica y Técnica (2009)</li>
+            <li>Eduard-Rhein Cultural Award (2011)</li>
+            <li>Salón de la Fama de Internet (2012)</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <ul>
+        <li>&copy; 2023 - Iván Ruiz Zorrilla</li>
+      </ul>
+    </footer>
+  </div>
+  <script>
+    const $ = (elementId) => document.getElementById(elementId);
+    const scrollToElement = (elementId) => $(elementId).scrollIntoView({ behavior: 'smooth', block: 'center' });
+  </script>
+</body>
+
+</html>

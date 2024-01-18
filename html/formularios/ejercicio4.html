@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejercicio 4</h1>
+    <h2>Información sobre el producto</h2>
+    <form action="">
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" id="nombre">
+            <br>
+            <label for="descripcion">Descripcion:</label>
+            <br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Escribe aquí..."></textarea>
+            <br>
+            <label for="avatar">Foto</label>
+            <br>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+            <br>
+            <input type="checkbox" name="Contador" id="contado">
+            <label for="contado">Contador de visitas</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Económicos</legend>
+            <label for="precio">Precio</label>
+            <input type="text" name="precio" id="precio">
+            <span>€</span>
+            <label for="tax">Impuesto</label>
+            <select name="tax" id="tax">
+                <option value="4%" id="tax">4%</option>
+                <option value="8%" id="tax">8%</option>
+                <option value="25%" id="tax">25%</option>
+            </select>
+            <br>
+            <br>
+            <label>Promocion</label>
+            <br>
+            <input type="radio" name="promocion" id="none">
+            <label for="none">Ninguno</label>
+            <br>
+            <input type="radio" name="promocion" id="transporte">
+            <label for="transporte">Transporte</label>
+            <br>
+            <input type="radio" name="promocion" id="descuento">
+            <label for="descuento">Descuento 5%</label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

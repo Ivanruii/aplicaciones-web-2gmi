@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejercicio 1</h1>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+
+        <br>
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos">
+
+        <br>
+
+        <label for="correo">Correo Electronico</label>
+        <input type="email" id="correo">
+
+        <br>
+
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass" pattern="[A-Za-z]{3}\d{2}" title="Tienes que poner tres letras y dos numeros.">
+
+        <br>
+
+        <label for="fecha-nacimiento">Fecha Nacimiento</label>
+        <input type="date" id="fecha-nacimiento">
+
+        <br>
+
+        <label for="color">Color Favorito</label>
+        <input type="color" id="color">
+
+        <br>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <fieldset style="border: none;">
+                <legend>Rango precios</legend>
+
+                <input type="radio" name="rango-1">
+                <label for="rango-1">0-20</label>
+
+                <br>
+
+                <input type="radio" name="rango-2">
+                <label for="rango-2">20-40</label>
+
+                <br>
+
+                <input type="radio" name="rango-3">
+                <label for="rango-3">40-60</label>
+
+                <br>
+
+                <input type="radio" name="rango-4">
+                <label for="rango-4">60-100</label>
+            </fieldset>
+
+
+            <fieldset style="border: none;">
+                <legend>¿Como nos conociste?</legend>
+
+                <input type="checkbox" name="check-1">
+                <label for="check-1">0-20</label>
+
+                <br>
+
+                <input type="checkbox" name="check-2">
+                <label for="check-2">20-40</label>
+
+                <br>
+
+                <input type="checkbox" name="check-3">
+                <label for="check-3">40-60</label>
+
+                <br>
+
+                <input type="checkbox" name="check-4">
+                <label for="check-4">60-100</label>
+            </fieldset>
+        </div>
+        <label for="opinion">Danos tu opinión:</label>
+
+        <br>
+
+        <textarea name="opinion" id="opinion" cols="30" rows="10" placeholder="Escribe aquí..."></textarea>
+
+        <br>
+
+        <label for="sugerencia">Danos una sugerencia:</label>
+
+        <br>
+
+        <textarea name="sugerencia" id="sugerencia" cols="30" rows="10" placeholder="Escribe aquí..."></textarea>
+
+        <br>
+
+        <label for="tiempo-internet">¿Cuanto tiempo le dedicas a navegar por internet?</label>
+
+        <br>
+
+        <select name="tiempo-internet" id="tiempo-internet">
+            <option value="2horas" id="tiempo-internet">2 Horas</option>
+            <option value="3horas" id="tiempo-internet">3 Horas</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar Formulario">
+
+        <input type="reset" value="Borrar formulario">
+    </form>
+</body>
+
+</html>
